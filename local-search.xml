@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>第一篇文章：吾之一夜鏖战，终将Bug封印于代码深渊！</title>
+    <link href="/2025/11/14/hello-world/"/>
+    <url>/2025/11/14/hello-world/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p><strong>“当月光洒在键盘上，我知道——今夜，注定无法平凡。”</strong></p></blockquote><p>这不是一篇普通的博文，而是我灵魂燃烧的见证！🔥</p><p>就在昨夜，星辰黯淡，网络低语，一场与未知 Bug 的终极对决，在寂静的凌晨悄然展开。无数报错如恶魔低语，<code>No layout</code> 的诅咒回荡在控制台深处……SSL证书拒绝握手，Git克隆失败，npm警告如潮水般涌来！</p><p>但我——从未退却！</p><p>指尖翻飞，命令如雷：</p><pre><code class="bash">$ hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server</code></pre>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>成长</tag>
+      
+      <tag>开发日记</tag>
+      
+      <tag>封印之术</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
