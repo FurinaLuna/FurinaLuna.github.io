@@ -19,12 +19,12 @@
   <meta name="author" content="Furina">
   <meta name="keywords" content="">
   
-    <meta name="description" content="提升效率的快速幂运算 快速幂 时间复杂度 $O(\log_2 n)$ (n为幂次) 代码实现 123456789101112long long fastpow(long long a, long long b)&#123;    long long ans &#x3D; 1;    while (b)    &#123;        if (b % 2 &#x3D;&#x3D; 1)            ans &#x3D; ans">
+    <meta name="description" content="提升效率的快速幂运算 ## 快速幂 ## 时间复杂度 O(log2n) (n为幂次) 代码实现 123456789101112long long fastpow(long long a, long long b)&#123;    long long ans &#x3D; 1;    while (b)    &#123;        if (b % 2 &#x3D;&#x3D; 1)            ans &#x3D;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="快速幂运算">
 <meta property="og:url" content="https://furinaluna.github.io/2025/11/17/%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97/index.html">
 <meta property="og:site_name" content="Furina的窝窝">
-<meta property="og:description" content="提升效率的快速幂运算 快速幂 时间复杂度 $O(\log_2 n)$ (n为幂次) 代码实现 123456789101112long long fastpow(long long a, long long b)&#123;    long long ans &#x3D; 1;    while (b)    &#123;        if (b % 2 &#x3D;&#x3D; 1)            ans &#x3D; ans">
+<meta property="og:description" content="提升效率的快速幂运算 ## 快速幂 ## 时间复杂度 O(log2n) (n为幂次) 代码实现 123456789101112long long fastpow(long long a, long long b)&#123;    long long ans &#x3D; 1;    while (b)    &#123;        if (b % 2 &#x3D;&#x3D; 1)            ans &#x3D;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-11-17T01:41:17.000Z">
 <meta property="article:modified_time" content="2025-11-17T04:45:25.062Z">
@@ -250,7 +250,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          517 字
+          519 字
         
       </span>
     
@@ -312,20 +312,15 @@
             
               <div class="markdown-body">
                 
-                <p><strong>提升效率的快速幂运算</strong></p>
-<h2 id="快速幂">快速幂</h2>
-<h2 id="时间复杂度-O-log-2-n">时间复杂度 $O(\log_2 n)$</h2>
-<p>(n为幂次)</p>
+                <p><strong>提升效率的快速幂运算</strong> ## 快速幂 ## 时间复杂度 <span class="math inline"><em>O</em>(log<sub>2</sub><em>n</em>)</span>
+(n为幂次)</p>
 <h2 id="代码实现">代码实现</h2>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-title function_">fastpow</span><span class="hljs-params">(<span class="hljs-type">long</span> <span class="hljs-type">long</span> a, <span class="hljs-type">long</span> <span class="hljs-type">long</span> b)</span><br>&#123;<br>    <span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-variable">ans</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (b)<br>    &#123;<br>        <span class="hljs-keyword">if</span> (b % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>)<br>            ans = ans * a;<br>        a = a * a;<br>        b &gt;&gt;= <span class="hljs-number">1</span>;<br>    &#125;<br>    <span class="hljs-keyword">return</span> ans;<br>&#125;<br></code></pre></td></tr></table></figure>
 <h2 id="变体-大数取模">变体-大数取模</h2>
-<p>一般能用到快速幂算法的，答案都会非常巨大，肯定是超出已有数据类型范围的，所以题目一般会说答案对某个数字取模。快速幂可以完成这个操作，只需要进行很小的修改。</p>
-<h2 id="时间复杂度-O-log-2-n-2">时间复杂度 $O(\log_2 n)$</h2>
-<p>(n为幂次)</p>
-<h2 id="代码实现-2">代码实现</h2>
-<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs axapta"><span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> fastpow(<span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> a, <span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> b, <span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> <span class="hljs-keyword">mod</span>)<br>&#123;<br>    a %= <span class="hljs-keyword">mod</span>;<span class="hljs-comment">//开头先取一次模</span><br>    <span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> ans = <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (b)<br>    &#123;<br>        <span class="hljs-keyword">if</span> (b % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>)<br>            ans = ans * a % <span class="hljs-keyword">mod</span>;<span class="hljs-comment">//每次运算都取模</span><br>        a = a * a % <span class="hljs-keyword">mod</span>;<span class="hljs-comment">//每次运算都取模</span><br>        b &gt;&gt;= <span class="hljs-number">1</span>;<br>    &#125;<br>    <span class="hljs-keyword">return</span> ans;<br>&#125;<br></code></pre></td></tr></table></figure>
-<h2 id="例题">例题</h2>
-<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1226">P1226 【模板】快速幂||取余运算</a></p>
+<p>一般能用到快速幂算法的，答案都会非常巨大，肯定是超出已有数据类型范围的，所以题目一般会说答案对某个数字取模。快速幂可以完成这个操作，只需要进行很小的修改。
+## 时间复杂度 <span class="math inline"><em>O</em>(log<sub>2</sub><em>n</em>)</span>
+(n为幂次) ## 代码实现 <figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs axapta"><span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> fastpow(<span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> a, <span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> b, <span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> <span class="hljs-keyword">mod</span>)<br>&#123;<br>    a %= <span class="hljs-keyword">mod</span>;<span class="hljs-comment">//开头先取一次模</span><br>    <span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> ans = <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (b)<br>    &#123;<br>        <span class="hljs-keyword">if</span> (b % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>)<br>            ans = ans * a % <span class="hljs-keyword">mod</span>;<span class="hljs-comment">//每次运算都取模</span><br>        a = a * a % <span class="hljs-keyword">mod</span>;<span class="hljs-comment">//每次运算都取模</span><br>        b &gt;&gt;= <span class="hljs-number">1</span>;<br>    &#125;<br>    <span class="hljs-keyword">return</span> ans;<br>&#125;<br></code></pre></td></tr></table></figure> ## 例题 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1226">P1226
+【模板】快速幂||取余运算</a></p>
 
                 
               </div>
@@ -387,6 +382,11 @@
           <div>2025年11月17日</div>
         </div>
       
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2025年11月17日</div>
+        </div>
       
       
         <div class="license-meta-item">
@@ -484,6 +484,12 @@
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -703,6 +709,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
