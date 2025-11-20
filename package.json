@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@traptitech/markdown-it-katex": "^3.6.0",
-    "hexo": "^7.0.0",
+    "hexo": "^8.1.1",
     "hexo-abbrlink": "^2.2.1",
     "hexo-admin": "^2.3.0",
     "hexo-asset-image": "github:CodeFalling/hexo-asset-image",
