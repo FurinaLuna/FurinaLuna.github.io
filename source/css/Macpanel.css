@@ -1,0 +1,38 @@
+
+.highlight {
+    background: #121405bb;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    padding-top: 35px;
+    position: relative;
+    margin: 20px 0;
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow: auto;
+}
+
+.highlight::before {
+    content: ' ';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff5f56;
+    box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+}
+
+
+.highlight figcaption {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    font-weight: 500;
+}
