@@ -222,7 +222,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[.highlight {  background: #011627;  border-radius: 5px;  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.4);  padding-top: 30px;}.highlight::before {  background: #fc625d;  border-radius: 50%;  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;  content: ' ';  height: 12px;  left: 12px;  margin-top: -20px;  position: absolute;  width: 12px;}]]></content>
+    <content type="html"><![CDATA[/* 滚动条bynote.cn */::-webkit-scrollbar {    width: 10px;    height: 10px;}::-webkit-scrollbar-thumb {    background-color: #8ae5e3;    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);    border-radius: 2em;}::-webkit-scrollbar-corner {    background-color: transparent;}::-moz-selection {    color: #fff;    background-color: #f18e8e;}]]></content>
     
   </entry>
   
@@ -244,28 +244,6 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[.index-card {  transition: all 0.5s;  transform: scale(calc(1.5 - 0.5 * var(--state)));  opacity: var(--state);  margin-bottom: 2rem;}.index-img img {  margin: 20px 0;}]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[/* 滚动条bynote.cn */::-webkit-scrollbar {    width: 10px;    height: 10px;}::-webkit-scrollbar-thumb {    background-color: #8ae5e3;    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);    border-radius: 2em;}::-webkit-scrollbar-corner {    background-color: transparent;}::-moz-selection {    color: #fff;    background-color: #f18e8e;}]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
     <content type="html"><![CDATA[#board {  -webkit-backdrop-filter: blur(15px);  backdrop-filter: blur(15px);}#toc {  padding: 10px;  top: 4rem;  background-color: var(--board-bg-color);  border-radius: 10px;  -webkit-backdrop-filter: blur(15px);  backdrop-filter: blur(15px);}]]></content>
     
   </entry>
@@ -277,7 +255,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[document  .querySelector('#web_bg')  .setAttribute('style', `background-image: ${document.querySelector('.banner').style.background.split(' ')[0]};position: fixed;width: 100%;height: 100%;z-index: -1;background-size: cover;`);document  .querySelector("#banner")  .setAttribute('style', 'background-image: url()')document  .querySelector("#banner .mask")  .setAttribute('style', 'background-color:rgba(0,0,0,0)')]]></content>
+    <content type="html"><![CDATA[.highlight {  background: #011627;  border-radius: 5px;  box-shadow: 0 10px 30px 0 rgba(69,43,43,0.4);  padding-top: 30px;}.highlight::before {  background: #fc625d;  border-radius: 50%;  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;  content: ' ';  height: 12px;  left: 12px;  margin-top: -20px;  position: absolute;  width: 12px;}]]></content>
     
   </entry>
   
@@ -289,6 +267,28 @@
     <url>/</url>
     
     <content type="html"><![CDATA[hexo.extend.filter.register('before_post_render', function(data) {  // 仅处理顶级标题（#开头），保持子标题不变  data.content = data.content.replace(/^#\s+(.+)$/gm, (match, title) => {    const id = 'section-' + title.trim()      .toLowerCase()      .replace(/[^\w\u4e00-\u9fa5]+/g, '-')      .replace(/^-|-$/g, '');    return `# <span id="${id}">${title}</span>`;  });  return data;});]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[.index-card {  transition: all 0.5s;  transform: scale(calc(1.5 - 0.5 * var(--state)));  opacity: var(--state);  margin-bottom: 2rem;}.index-img img {  margin: 20px 0;}]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[document  .querySelector('#web_bg')  .setAttribute('style', `background-image: ${document.querySelector('.banner').style.background.split(' ')[0]};position: fixed;width: 100%;height: 100%;z-index: -1;background-size: cover;`);document  .querySelector("#banner")  .setAttribute('style', 'background-image: url()')document  .querySelector("#banner .mask")  .setAttribute('style', 'background-color:rgba(0,0,0,0)')]]></content>
     
   </entry>
   
@@ -354,7 +354,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[var  OriginTitle  =  document.title;var  titleTime;document.addEventListener('visibilitychange', function () { if (document.hidden) { document.title  =  '(ง •̀_•́)ง‼这里是Furina~'; clearTimeout(titleTime);    } else { document.title  =  '( つ•̀ω•́)つ欢迎回来！'; titleTime  =  setTimeout(function () { document.title  =  OriginTitle;}, 2000);    }});]]></content>
+    <content type="html"><![CDATA[function() {    var topArrow = jQuery('#scroll-top-button');    if (topArrow.length === 0) {      return;    }    var board = jQuery('#board');    if (board.length === 0) {      return;    }    var arrowUpIcon = jQuery('#scroll-top-button i');    if(arrowUpIcon.length === 0){      return;    }     var posDisplay = false;    var scrollDisplay = false;    // Position    var setTopArrowPos = function() {      var boardRight = board[0].getClientRects()[0].right;      var bodyWidth = document.body.offsetWidth;      var right = bodyWidth - boardRight;      posDisplay = right >= 50;      topArrow.css({        'bottom': scrollDisplay ? '20px' : '-60px',        'right' : posDisplay ? right - 64 : 8 + 'px',        'min-width' : posDisplay ? 40 : 28 + 'px',        'min-height' : posDisplay ? 40 : 28 + 'px'      });      arrowUpIcon.css({        'font-size' : posDisplay ? 32 : 20 + 'px'      });    };    setTopArrowPos();    jQuery(window).resize(setTopArrowPos);    // Display    var headerHeight = board.offset().top;    Fluid.utils.listenScroll(function() {      var scrollHeight = document.body.scrollTop + document.documentElement.scrollTop;      scrollDisplay = scrollHeight >= headerHeight;      topArrow.css({        'bottom': scrollDisplay ? '20px' : '-60px'      });    });    // Click    topArrow.on('click', function() {      jQuery('body,html').animate({        scrollTop: 0,        easing   : 'swing'      });    });  }]]></content>
     
   </entry>
   
@@ -365,7 +365,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[function() {    var topArrow = jQuery('#scroll-top-button');    if (topArrow.length === 0) {      return;    }    var board = jQuery('#board');    if (board.length === 0) {      return;    }    var arrowUpIcon = jQuery('#scroll-top-button i');    if(arrowUpIcon.length === 0){      return;    }     var posDisplay = false;    var scrollDisplay = false;    // Position    var setTopArrowPos = function() {      var boardRight = board[0].getClientRects()[0].right;      var bodyWidth = document.body.offsetWidth;      var right = bodyWidth - boardRight;      posDisplay = right >= 50;      topArrow.css({        'bottom': scrollDisplay ? '20px' : '-60px',        'right' : posDisplay ? right - 64 : 8 + 'px',        'min-width' : posDisplay ? 40 : 28 + 'px',        'min-height' : posDisplay ? 40 : 28 + 'px'      });      arrowUpIcon.css({        'font-size' : posDisplay ? 32 : 20 + 'px'      });    };    setTopArrowPos();    jQuery(window).resize(setTopArrowPos);    // Display    var headerHeight = board.offset().top;    Fluid.utils.listenScroll(function() {      var scrollHeight = document.body.scrollTop + document.documentElement.scrollTop;      scrollDisplay = scrollHeight >= headerHeight;      topArrow.css({        'bottom': scrollDisplay ? '20px' : '-60px'      });    });    // Click    topArrow.on('click', function() {      jQuery('body,html').animate({        scrollTop: 0,        easing   : 'swing'      });    });  }]]></content>
+    <content type="html"><![CDATA[var  OriginTitle  =  document.title;var  titleTime;document.addEventListener('visibilitychange', function () { if (document.hidden) { document.title  =  '(ง •̀_•́)ง‼这里是Furina~'; clearTimeout(titleTime);    } else { document.title  =  '( つ•̀ω•́)つ欢迎回来！'; titleTime  =  setTimeout(function () { document.title  =  OriginTitle;}, 2000);    }});]]></content>
     
   </entry>
   
