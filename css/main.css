@@ -794,7 +794,7 @@ body a:hover {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 code {
-  color: inherit;
+  color: #e05b35;
 }
 table {
   font-size: inherit;
@@ -852,7 +852,7 @@ i.iconfont {
   --scrollbar-hover-color: #a6a6a6;
   --button-bg-color: transparent;
   --button-hover-bg-color: #f2f3f5;
-  --highlight-bg-color: #272822;
+  --highlight-bg-color: #282c34;
   --inlinecode-bg-color: rgba(175,184,193,0.2);
   --fold-title-color: #3c4858;
   --fold-border-color: #eaecef;
