@@ -218,55 +218,11 @@
   
   
   <entry>
-    <title>about</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<p>本人是一个一个喜欢芙芙的码农,2024级半月工作室负责人，小菜鸡，梦想成为<strong>鱼皮</strong>那样的大佬。</p><p><strong>我一直相信</strong></p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs csharp"><span class="hljs-function"><span class="hljs-built_in">int</span> <span class="hljs-title">main</span>()</span><br>&#123;<br><span class="hljs-built_in">double</span> skill = <span class="hljs-number">0.0</span>,progress = <span class="hljs-number">0.5</span>;<br><span class="hljs-built_in">int</span> day = <span class="hljs-number">0</span>, learning = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">while</span> (++day)<br>&#123;<br><span class="hljs-keyword">if</span> (learning)<br>&#123;<br>skill += progress;<br>&#125;<br>&#125;<br>&#125;<br></code></pre></td></tr></table></figure><p>本站用于展示我的项目和分享我的经验，欢迎想加入半月工作室的学弟学妹们来学习。各路的大佬们也可以来交流学习，我会尽我所能帮助大家。如果有大佬可以找我做项目，那就更好了，我会很乐意的。</p><hr><p>你可以通过以下方式联系我： 邮箱 2517523791@qq.com QQ 2517523791 原神308573407 —</p>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title></title>
     <link href="/"/>
     <url>/</url>
     
     <content type="html"><![CDATA[#board {  -webkit-backdrop-filter: blur(15px);  backdrop-filter: blur(15px);}#toc {  padding: 10px;  top: 4rem;  background-color: var(--board-bg-color);  border-radius: 10px;  -webkit-backdrop-filter: blur(15px);  backdrop-filter: blur(15px);}]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[/* 滚动条bynote.cn */::-webkit-scrollbar {    width: 10px;    height: 10px;}::-webkit-scrollbar-thumb {    background-color: #8ae5e3;    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);    border-radius: 2em;}::-webkit-scrollbar-corner {    background-color: transparent;}::-moz-selection {    color: #fff;    background-color: #f18e8e;}]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[/* 鼠标指针图标bynote.cn */body {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a11.cur), auto;}/*a标签*/a:hover {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/*按钮*/button:hover {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}#rightside>div>button,#rightside>div>a {    display: block;    margin-bottom: 2px;    width: 30px;    height: 30px;    color: var(--btn-color);    text-align: center;    font-size: 16px;    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/* 文章标签 */.layout_post .tag_share .post-meta__tags {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/* 评论区 */.vcol * {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}.v[data-class=v] .vicon {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}.v[data-class=v] .vbtn {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/* 回复 */.vat {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/*i标签*/i:hover {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/*up酱*/#upj:hover {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/*分页器*/#pagination .page-number:hover {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/* 分页器的三个点(...) */.space {    color: #00c4b6;}]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[hexo.extend.filter.register('before_post_render', function(data) {  // 仅处理顶级标题（#开头），保持子标题不变  data.content = data.content.replace(/^#\s+(.+)$/gm, (match, title) => {    const id = 'section-' + title.trim()      .toLowerCase()      .replace(/[^\w\u4e00-\u9fa5]+/g, '-')      .replace(/^-|-$/g, '');    return `# <span id="${id}">${title}</span>`;  });  return data;});]]></content>
     
   </entry>
   
@@ -288,7 +244,40 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[(function (window, document, undefined) {    var hearts = [];    window.requestAnimationFrame = (function () {        return window.requestAnimationFrame ||            window.webkitRequestAnimationFrame ||            window.mozRequestAnimationFrame ||            window.oRequestAnimationFrame ||            window.msRequestAnimationFrame ||            function (callback) {                setTimeout(callback, 1000 / 60);            }    })();    init();    function init() {        css(            ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}"        );        attachEvent();        gameloop();    }    function gameloop() {        for (var i = 0; i < hearts.length; i++) {            if (hearts[i].alpha <= 0) {                document.body.removeChild(hearts[i].el);                hearts.splice(i, 1);                continue;            }            hearts[i].y--;            hearts[i].scale += 0.004;            hearts[i].alpha -= 0.013;            hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i]                .alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale +                ") rotate(45deg);background:" + hearts[i].color;        }        requestAnimationFrame(gameloop);    }    function attachEvent() {        var old = typeof window.onclick === "function" && window.onclick;        window.onclick = function (event) {            old && old();            createHeart(event);        }    }    function createHeart(event) {        var d = document.createElement("div");        d.className = "heart";        hearts.push({            el: d,            x: event.clientX - 5,            y: event.clientY - 5,            scale: 1,            alpha: 1,            color: randomColor()        });        document.body.appendChild(d);    }    function css(css) {        var style = document.createElement("style");        style.type = "text/css";        try {            style.appendChild(document.createTextNode(css));        } catch (ex) {            style.styleSheet.cssText = css;        }        document.getElementsByTagName('head')[0].appendChild(style);    }    function randomColor() {        return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) +            ")";    }})(window, document);]]></content>
+    <content type="html"><![CDATA[/* 鼠标指针图标bynote.cn */body {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a11.cur), auto;}/*a标签*/a:hover {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/*按钮*/button:hover {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}#rightside>div>button,#rightside>div>a {    display: block;    margin-bottom: 2px;    width: 30px;    height: 30px;    color: var(--btn-color);    text-align: center;    font-size: 16px;    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/* 文章标签 */.layout_post .tag_share .post-meta__tags {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/* 评论区 */.vcol * {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}.v[data-class=v] .vicon {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}.v[data-class=v] .vbtn {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/* 回复 */.vat {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/*i标签*/i:hover {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/*up酱*/#upj:hover {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/*分页器*/#pagination .page-number:hover {    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;}/* 分页器的三个点(...) */.space {    color: #00c4b6;}]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>about</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<p>本人是一个一个喜欢芙芙的码农,2024级半月工作室负责人，小菜鸡，梦想成为<strong>鱼皮</strong>那样的大佬。</p><p><strong>我一直相信</strong></p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs csharp"><span class="hljs-function"><span class="hljs-built_in">int</span> <span class="hljs-title">main</span>()</span><br>&#123;<br><span class="hljs-built_in">double</span> skill = <span class="hljs-number">0.0</span>,progress = <span class="hljs-number">0.5</span>;<br><span class="hljs-built_in">int</span> day = <span class="hljs-number">0</span>, learning = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">while</span> (++day)<br>&#123;<br><span class="hljs-keyword">if</span> (learning)<br>&#123;<br>skill += progress;<br>&#125;<br>&#125;<br>&#125;<br></code></pre></td></tr></table></figure><p>本站用于展示我的项目和分享我的经验，欢迎想加入半月工作室的学弟学妹们来学习。各路的大佬们也可以来交流学习，我会尽我所能帮助大家。如果有大佬可以找我做项目，那就更好了，我会很乐意的。</p><hr><p>你可以通过以下方式联系我： 邮箱 2517523791@qq.com QQ 2517523791 原神308573407 —</p>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[/* 滚动条bynote.cn */::-webkit-scrollbar {    width: 10px;    height: 10px;}::-webkit-scrollbar-thumb {    background-color: #8ae5e3;    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);    border-radius: 2em;}::-webkit-scrollbar-corner {    background-color: transparent;}::-moz-selection {    color: #fff;    background-color: #f18e8e;}]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[hexo.extend.filter.register('before_post_render', function(data) {  // 仅处理顶级标题（#开头），保持子标题不变  data.content = data.content.replace(/^#\s+(.+)$/gm, (match, title) => {    const id = 'section-' + title.trim()      .toLowerCase()      .replace(/[^\w\u4e00-\u9fa5]+/g, '-')      .replace(/^-|-$/g, '');    return `# <span id="${id}">${title}</span>`;  });  return data;});]]></content>
     
   </entry>
   
@@ -310,7 +299,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[const  cards  =  document.querySelectorAll('.index-card')if (cards.length) { document.querySelector('.row').setAttribute('style', 'overflow: hidden;') const  coefficient  =  document.documentElement.clientWidth  >  768  ?  .5  :  .3 const  origin  =  document.documentElement.clientHeight  -  cards[0].getBoundingClientRect().height  *  coefficient function  throttle(fn, wait) { let  timer  =  null; return  function () { const  context  =  this; const  args  =  arguments; if (!timer) { timer  =  setTimeout(function () { fn.apply(context, args); timer  =  null;}, wait)      }    }  } function  handle() { cards.forEach(card  => { card.setAttribute('style', `--state: ${(card.getBoundingClientRect().top - origin) < 0 ? 1 : 0};`)    }) console.log(1)  } document.addEventListener("scroll", throttle(handle, 100));}]]></content>
+    <content type="html"><![CDATA[(function (window, document, undefined) {    var hearts = [];    window.requestAnimationFrame = (function () {        return window.requestAnimationFrame ||            window.webkitRequestAnimationFrame ||            window.mozRequestAnimationFrame ||            window.oRequestAnimationFrame ||            window.msRequestAnimationFrame ||            function (callback) {                setTimeout(callback, 1000 / 60);            }    })();    init();    function init() {        css(            ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}"        );        attachEvent();        gameloop();    }    function gameloop() {        for (var i = 0; i < hearts.length; i++) {            if (hearts[i].alpha <= 0) {                document.body.removeChild(hearts[i].el);                hearts.splice(i, 1);                continue;            }            hearts[i].y--;            hearts[i].scale += 0.004;            hearts[i].alpha -= 0.013;            hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i]                .alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale +                ") rotate(45deg);background:" + hearts[i].color;        }        requestAnimationFrame(gameloop);    }    function attachEvent() {        var old = typeof window.onclick === "function" && window.onclick;        window.onclick = function (event) {            old && old();            createHeart(event);        }    }    function createHeart(event) {        var d = document.createElement("div");        d.className = "heart";        hearts.push({            el: d,            x: event.clientX - 5,            y: event.clientY - 5,            scale: 1,            alpha: 1,            color: randomColor()        });        document.body.appendChild(d);    }    function css(css) {        var style = document.createElement("style");        style.type = "text/css";        try {            style.appendChild(document.createTextNode(css));        } catch (ex) {            style.styleSheet.cssText = css;        }        document.getElementsByTagName('head')[0].appendChild(style);    }    function randomColor() {        return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) +            ")";    }})(window, document);]]></content>
     
   </entry>
   
@@ -332,7 +321,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[//运行时间bynote.cnvar now = new Date(); function createtime() {     var grt= new Date("11/14/2025 13:14:52");//在此处修改你的建站时间，格式：月/日/年 时:分:秒    now.setTime(now.getTime()+250);     days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);     hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);     if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);     mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}     seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);     snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}     document.getElementById("timeDate").innerHTML = "Furina的窝窝自从搭建已经历"+dnum+" 天 ";     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; } setInterval("createtime()",1000);]]></content>
+    <content type="html"><![CDATA[const  cards  =  document.querySelectorAll('.index-card')if (cards.length) { document.querySelector('.row').setAttribute('style', 'overflow: hidden;') const  coefficient  =  document.documentElement.clientWidth  >  768  ?  .5  :  .3 const  origin  =  document.documentElement.clientHeight  -  cards[0].getBoundingClientRect().height  *  coefficient function  throttle(fn, wait) { let  timer  =  null; return  function () { const  context  =  this; const  args  =  arguments; if (!timer) { timer  =  setTimeout(function () { fn.apply(context, args); timer  =  null;}, wait)      }    }  } function  handle() { cards.forEach(card  => { card.setAttribute('style', `--state: ${(card.getBoundingClientRect().top - origin) < 0 ? 1 : 0};`)    }) console.log(1)  } document.addEventListener("scroll", throttle(handle, 100));}]]></content>
     
   </entry>
   
@@ -344,6 +333,17 @@
     <url>/</url>
     
     <content type="html"><![CDATA[var  OriginTitle  =  document.title;var  titleTime;document.addEventListener('visibilitychange', function () { if (document.hidden) { document.title  =  '(ง •̀_•́)ง‼这里是Furina~'; clearTimeout(titleTime);    } else { document.title  =  '( つ•̀ω•́)つ欢迎回来！'; titleTime  =  setTimeout(function () { document.title  =  OriginTitle;}, 2000);    }});]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[//运行时间bynote.cnvar now = new Date(); function createtime() {     var grt= new Date("11/14/2025 13:14:52");//在此处修改你的建站时间，格式：月/日/年 时:分:秒    now.setTime(now.getTime()+250);     days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);     hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);     if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);     mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}     seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);     snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}     document.getElementById("timeDate").innerHTML = "Furina的窝窝自从搭建已经历"+dnum+" 天 ";     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; } setInterval("createtime()",1000);]]></content>
     
   </entry>
   
