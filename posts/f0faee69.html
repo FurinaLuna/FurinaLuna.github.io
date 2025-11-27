@@ -19,12 +19,12 @@
   <meta name="author" content="Furina">
   <meta name="keywords" content="前端, 后端, 嵌入式, 人工智能, 算法, 数据结构与算法, 学习路线, IT, 技术, 分享">
   
-    <meta name="description" content="有序数列查找特定大小数的算法：二分查找（Binary Search） 凸函数或者凹函数寻找极值的算法：三分查找（Ternary Search） 二分查找 分析 以递增数组为例，将其分为两半。若中间值大于要找的数，说明要找的数在左边一半；若中间值小于要找的数，说明要找的数在右边一半。不断将范围缩小一半，直到找到要找的数。 时间复杂度：O(log n) （n为数据规模） 代码实现 整数  查找 ≥\g">
+    <meta name="description" content="有序数列查找特定大小数的算法：二分查找（Binary Search） 凸函数或者凹函数寻找极值的算法：三分查找（Ternary Search） 二分查找 分析 以递增数组为例，将其分为两半。若中间值大于要找的数，说明要找的数在左边一半；若中间值小于要找的数，说明要找的数在右边一半。不断将范围缩小一半，直到找到要找的数。 时间复杂度：O(log n) （n为数据规模） 代码实现 整">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二分查找、三分查找">
 <meta property="og:url" content="https://furinaluna.top/posts/f0faee69.html">
 <meta property="og:site_name" content="FurinaLuna-Laboratory">
-<meta property="og:description" content="有序数列查找特定大小数的算法：二分查找（Binary Search） 凸函数或者凹函数寻找极值的算法：三分查找（Ternary Search） 二分查找 分析 以递增数组为例，将其分为两半。若中间值大于要找的数，说明要找的数在左边一半；若中间值小于要找的数，说明要找的数在右边一半。不断将范围缩小一半，直到找到要找的数。 时间复杂度：O(log n) （n为数据规模） 代码实现 整数  查找 ≥\g">
+<meta property="og:description" content="有序数列查找特定大小数的算法：二分查找（Binary Search） 凸函数或者凹函数寻找极值的算法：三分查找（Ternary Search） 二分查找 分析 以递增数组为例，将其分为两半。若中间值大于要找的数，说明要找的数在左边一半；若中间值小于要找的数，说明要找的数在右边一半。不断将范围缩小一半，直到找到要找的数。 时间复杂度：O(log n) （n为数据规模） 代码实现 整">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-11-17T04:44:59.000Z">
 <meta property="article:modified_time" content="2025-11-19T05:40:24.583Z">
@@ -263,7 +263,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          1.2k 字
         
       </span>
     
@@ -418,37 +418,32 @@
             
               <div class="markdown-body">
                 
-                <p><strong>有序数列查找特定大小数的算法</strong>：二分查找（Binary Search）<br>
-<strong>凸函数或者凹函数寻找极值的算法</strong>：三分查找（Ternary Search）</p>
+                <p><strong>有序数列查找特定大小数的算法</strong>：二分查找（Binary
+Search）
+<strong>凸函数或者凹函数寻找极值的算法</strong>：三分查找（Ternary
+Search）</p>
 <h2 id="二分查找">二分查找</h2>
-<p><strong>分析</strong><br>
+<p><strong>分析</strong>
 以递增数组为例，将其分为两半。若中间值大于要找的数，说明要找的数在左边一半；若中间值小于要找的数，说明要找的数在右边一半。不断将范围缩小一半，直到找到要找的数。</p>
-<p><strong>时间复杂度</strong>：O(log n)<br>
-（n为数据规模）</p>
+<p><strong>时间复杂度</strong>：O(log n) （n为数据规模）</p>
 <h3 id="代码实现">代码实现</h3>
 <p><strong>整数</strong></p>
 <ul>
-<li>查找 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\geq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span></span></span></span> x的第一个数：<br>
-（将 if (a[mid] <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\geq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span></span></span></span> x) 改为 if (a[mid] &gt; x) ，可查找 &gt; x的第一个数）</li>
+<li>查找 <span class="math inline">≥</span> x的第一个数： （将 if
+(a[mid] <span class="math inline">≥</span> x) 改为 if (a[mid] &gt; x)
+，可查找 &gt; x的第一个数） <figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs arcade"><span class="hljs-comment">// a[ ]为储存数据的有序递增数组</span><br><span class="hljs-comment">// l ~ r为二分查找的数组范围</span><br>int l = <span class="hljs-number">0</span>, r = n - <span class="hljs-number">1</span>;<br><span class="hljs-keyword">while</span> (l &lt; r)<br>&#123;<br>    int <span class="hljs-built_in">mid</span> = (l + r) / <span class="hljs-number">2</span>;<br>    <span class="hljs-keyword">if</span> (a[<span class="hljs-built_in">mid</span>] &gt;= x)<br>        r = <span class="hljs-built_in">mid</span>;<br>    <span class="hljs-keyword">else</span><br>        l = <span class="hljs-built_in">mid</span> + <span class="hljs-number">1</span>;<br>&#125;<br></code></pre></td></tr></table></figure></li>
+<li>查找 <span class="math inline">≤</span> x的最后一个数： （将 if
+(a[mid] <span class="math inline">≤</span> x) 改为 if (a[mid] &lt; x)
+，查找 &lt; x的最后一个数）</li>
 </ul>
-<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs arcade"><span class="hljs-comment">// a[ ]为储存数据的有序递增数组</span><br><span class="hljs-comment">// l ~ r为二分查找的数组范围</span><br>int l = <span class="hljs-number">0</span>, r = n - <span class="hljs-number">1</span>;<br><span class="hljs-keyword">while</span> (l &lt; r)<br>&#123;<br>    int <span class="hljs-built_in">mid</span> = (l + r) / <span class="hljs-number">2</span>;<br>    <span class="hljs-keyword">if</span> (a[<span class="hljs-built_in">mid</span>] &gt;= x)<br>        r = <span class="hljs-built_in">mid</span>;<br>    <span class="hljs-keyword">else</span><br>        l = <span class="hljs-built_in">mid</span> + <span class="hljs-number">1</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<ul>
-<li>查找 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> x的最后一个数：<br>
-（将 if (a[mid] <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> x) 改为 if (a[mid] &lt; x) ，查找 &lt; x的最后一个数）</li>
-</ul>
-<p>易错点：此时 mid为（l+r+1）/2，若忘记 “+1” ，将会死循环。</p>
-<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs arcade"><span class="hljs-comment">// a[ ]为储存数据的有序递增数组</span><br><span class="hljs-comment">// l ~ r为二分查找的数组范围</span><br>int l = <span class="hljs-number">0</span>, r = n - <span class="hljs-number">1</span>;<br><span class="hljs-keyword">while</span> (l &lt; r)<br>&#123;<br>    int <span class="hljs-built_in">mid</span> = (l + r + <span class="hljs-number">1</span>) / <span class="hljs-number">2</span>;<br>    <span class="hljs-keyword">if</span> (a[<span class="hljs-built_in">mid</span>] &lt;= x)<br>        l = <span class="hljs-built_in">mid</span>;<br>    <span class="hljs-keyword">else</span><br>        r = <span class="hljs-built_in">mid</span> - <span class="hljs-number">1</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p><strong>实数</strong><br>
-查找满足一定条件的实数：（即以下代码令 check(x) == true 的 x）</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">// <span class="hljs-keyword">check</span>(<span class="hljs-type">int</span> x): 判断x是否满足条件<br>// eps: 精度（因为浮点数误差，不可直接比大小）<br>// <span class="hljs-keyword">BEGIN</span>: 查找左边界<br>// <span class="hljs-keyword">END</span>: 查找右边界<br><span class="hljs-type">bool</span> <span class="hljs-keyword">check</span>(<span class="hljs-type">int</span> x);<br><span class="hljs-type">double</span> eps = <span class="hljs-number">1e-6</span>;<br><span class="hljs-type">double</span> l = <span class="hljs-keyword">BEGIN</span>, r = <span class="hljs-keyword">END</span>;<br><span class="hljs-keyword">while</span> (r - l &gt; eps)<br>&#123;<br>    <span class="hljs-type">double</span> mid = (l + r) / <span class="hljs-number">2</span>;<br>    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">check</span>(mid))<br>        l = mid;<br>    <span class="hljs-keyword">else</span><br>        r = mid;<br>&#125;   <br></code></pre></td></tr></table></figure>
-<hr>
-<h2 id="三分查找">三分查找</h2>
-<hr>
-<p><strong>分析</strong><br>
+<p>易错点：此时 mid为（l+r+1）/2，若忘记 “+1” ，将会死循环。
+<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs arcade"><span class="hljs-comment">// a[ ]为储存数据的有序递增数组</span><br><span class="hljs-comment">// l ~ r为二分查找的数组范围</span><br>int l = <span class="hljs-number">0</span>, r = n - <span class="hljs-number">1</span>;<br><span class="hljs-keyword">while</span> (l &lt; r)<br>&#123;<br>    int <span class="hljs-built_in">mid</span> = (l + r + <span class="hljs-number">1</span>) / <span class="hljs-number">2</span>;<br>    <span class="hljs-keyword">if</span> (a[<span class="hljs-built_in">mid</span>] &lt;= x)<br>        l = <span class="hljs-built_in">mid</span>;<br>    <span class="hljs-keyword">else</span><br>        r = <span class="hljs-built_in">mid</span> - <span class="hljs-number">1</span>;<br>&#125;<br></code></pre></td></tr></table></figure> <strong>实数</strong>
+查找满足一定条件的实数：（即以下代码令 check(x) == true 的 x）
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">// <span class="hljs-keyword">check</span>(<span class="hljs-type">int</span> x): 判断x是否满足条件<br>// eps: 精度（因为浮点数误差，不可直接比大小）<br>// <span class="hljs-keyword">BEGIN</span>: 查找左边界<br>// <span class="hljs-keyword">END</span>: 查找右边界<br><span class="hljs-type">bool</span> <span class="hljs-keyword">check</span>(<span class="hljs-type">int</span> x);<br><span class="hljs-type">double</span> eps = <span class="hljs-number">1e-6</span>;<br><span class="hljs-type">double</span> l = <span class="hljs-keyword">BEGIN</span>, r = <span class="hljs-keyword">END</span>;<br><span class="hljs-keyword">while</span> (r - l &gt; eps)<br>&#123;<br>    <span class="hljs-type">double</span> mid = (l + r) / <span class="hljs-number">2</span>;<br>    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">check</span>(mid))<br>        l = mid;<br>    <span class="hljs-keyword">else</span><br>        r = mid;<br>&#125;   <br></code></pre></td></tr></table></figure></p>
+<p><strong>分析</strong>
 将数组分为三份，分别对应数组的左中右三个位置。若左中右三个位置的函数值在同一侧，则将数组缩小到左中右三个位置；若左中右三个位置的函数值在不同侧，则将数组缩小到中间两个位置。不断缩小数组范围，直到找到极值。</p>
-<p><strong>时间复杂度</strong>：O(log n)<br>
-（n为数据规模）</p>
-<h3 id="代码实现-2">代码实现</h3>
+<p><strong>时间复杂度</strong>：O(log n) （n为数据规模）</p>
+<h3 id="代码实现-1">代码实现</h3>
 <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs arduino"><span class="hljs-comment">// f(double x): 给定区间内的凹函数或凸函数</span><br><span class="hljs-comment">// eps: 精度（因为浮点数误差，不可直接比大小）</span><br><span class="hljs-comment">// BEGIN: 查找左边界</span><br><span class="hljs-comment">// END: 查找右边界</span><br><span class="hljs-function"><span class="hljs-type">double</span> <span class="hljs-title">f</span><span class="hljs-params">(<span class="hljs-type">double</span> x)</span></span>;<br><span class="hljs-type">double</span> eps = <span class="hljs-number">1e-6</span>;<br><span class="hljs-type">double</span> l = BEGIN, r = END;<br><span class="hljs-keyword">while</span>(r - l &gt; eps)<br>&#123;<br>    <span class="hljs-type">double</span> m1 = l + (r - l) / <span class="hljs-number">3</span>, m2 = r - (r - l) / <span class="hljs-number">3</span>;<br>    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">f</span>(m1) &gt; <span class="hljs-built_in">f</span>(m2)) <span class="hljs-comment">// 此为找最小值，若要找最大值，则改为&lt;</span><br>        l = m1;<br>    <span class="hljs-keyword">else</span><br>        r = m2;<br>&#125;   <br></code></pre></td></tr></table></figure>
 
                 
