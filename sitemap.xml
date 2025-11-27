@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://furinaluna.top/about/index.html</loc>
+    
+    <lastmod>2025-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://furinaluna.top/playlist/index.html</loc>
     
     <lastmod>2025-11-27</lastmod>
@@ -41,15 +50,6 @@
     <loc>https://furinaluna.top/posts/bae03965.html</loc>
     
     <lastmod>2025-11-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://furinaluna.top/about/index.html</loc>
-    
-    <lastmod>2025-11-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -154,14 +154,14 @@
   </url>
   
   <url>
-    <loc>https://furinaluna.top/tags/%E5%90%8E%E7%AB%AF-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF-IT/</loc>
+    <loc>https://furinaluna.top/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF-IT/</loc>
     <lastmod>2025-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://furinaluna.top/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF-IT/</loc>
+    <loc>https://furinaluna.top/tags/%E5%90%8E%E7%AB%AF-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF-IT/</loc>
     <lastmod>2025-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -212,14 +212,14 @@
   </url>
   
   <url>
-    <loc>https://furinaluna.top/categories/%E5%90%8E%E7%AB%AF/</loc>
+    <loc>https://furinaluna.top/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/</loc>
     <lastmod>2025-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://furinaluna.top/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/</loc>
+    <loc>https://furinaluna.top/categories/%E5%90%8E%E7%AB%AF/</loc>
     <lastmod>2025-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -19,12 +19,12 @@
   <meta name="author" content="Furina">
   <meta name="keywords" content="前端, 后端, 嵌入式, 人工智能, 算法, 数据结构与算法, 学习路线, IT, 技术, 分享">
   
-    <meta name="description" content="提升效率的快速幂运算 ## 快速幂 ## 时间复杂度 O(log_2 n) (n为幂次) 代码实现 123456789101112long long fastpow(long long a, long long b)&#123;    long long ans &#x3D; 1;    while (b)    &#123;        if (b % 2 &#x3D;&#x3D; 1)            ans">
+    <meta name="description" content="提升效率的快速幂运算 快速幂 时间复杂度 O(log_2 n) (n为幂次) 代码实现 123456789101112long long fastpow(long long a, long long b)&#123;    long long ans &#x3D; 1;    while (b)    &#123;        if (b % 2 &#x3D;&#x3D; 1)            ans &#x3D; ans *">
 <meta property="og:type" content="article">
 <meta property="og:title" content="快速幂运算">
 <meta property="og:url" content="https://furinaluna.top/posts/716f5d8f.html">
 <meta property="og:site_name" content="FurinaLuna-Laboratory">
-<meta property="og:description" content="提升效率的快速幂运算 ## 快速幂 ## 时间复杂度 O(log_2 n) (n为幂次) 代码实现 123456789101112long long fastpow(long long a, long long b)&#123;    long long ans &#x3D; 1;    while (b)    &#123;        if (b % 2 &#x3D;&#x3D; 1)            ans">
+<meta property="og:description" content="提升效率的快速幂运算 快速幂 时间复杂度 O(log_2 n) (n为幂次) 代码实现 123456789101112long long fastpow(long long a, long long b)&#123;    long long ans &#x3D; 1;    while (b)    &#123;        if (b % 2 &#x3D;&#x3D; 1)            ans &#x3D; ans *">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-11-17T01:41:17.000Z">
 <meta property="article:modified_time" content="2025-11-21T07:40:14.686Z">
@@ -263,7 +263,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          515 字
+          511 字
         
       </span>
     
@@ -418,19 +418,20 @@
             
               <div class="markdown-body">
                 
-                <p><strong>提升效率的快速幂运算</strong> ## 快速幂 ## 时间复杂度 O(log_2
-n) (n为幂次)</p>
+                <p><strong>提升效率的快速幂运算</strong></p>
+<h2 id="快速幂">快速幂</h2>
+<h2 id="时间复杂度-O-log-2-n">时间复杂度 O(log_2 n)</h2>
+<p>(n为幂次)</p>
 <h2 id="代码实现">代码实现</h2>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-title function_">fastpow</span><span class="hljs-params">(<span class="hljs-type">long</span> <span class="hljs-type">long</span> a, <span class="hljs-type">long</span> <span class="hljs-type">long</span> b)</span><br>&#123;<br>    <span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-variable">ans</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (b)<br>    &#123;<br>        <span class="hljs-keyword">if</span> (b % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>)<br>            ans = ans * a;<br>        a = a * a;<br>        b &gt;&gt;= <span class="hljs-number">1</span>;<br>    &#125;<br>    <span class="hljs-keyword">return</span> ans;<br>&#125;<br></code></pre></td></tr></table></figure>
 <h2 id="变体-大数取模">变体-大数取模</h2>
 <p>一般能用到快速幂算法的，答案都会非常巨大，肯定是超出已有数据类型范围的，所以题目一般会说答案对某个数字取模。快速幂可以完成这个操作，只需要进行很小的修改。</p>
-<h2 id="时间复杂度-olog_2-n">时间复杂度 O(log_2 n)</h2>
+<h2 id="时间复杂度-O-log-2-n-2">时间复杂度 O(log_2 n)</h2>
 <p>(n为幂次)</p>
-<h2 id="代码实现-1">代码实现</h2>
+<h2 id="代码实现-2">代码实现</h2>
 <figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs axapta"><span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> fastpow(<span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> a, <span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> b, <span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> <span class="hljs-keyword">mod</span>)<br>&#123;<br>    a %= <span class="hljs-keyword">mod</span>;<span class="hljs-comment">//开头先取一次模</span><br>    <span class="hljs-built_in">long</span> <span class="hljs-built_in">long</span> ans = <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (b)<br>    &#123;<br>        <span class="hljs-keyword">if</span> (b % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>)<br>            ans = ans * a % <span class="hljs-keyword">mod</span>;<span class="hljs-comment">//每次运算都取模</span><br>        a = a * a % <span class="hljs-keyword">mod</span>;<span class="hljs-comment">//每次运算都取模</span><br>        b &gt;&gt;= <span class="hljs-number">1</span>;<br>    &#125;<br>    <span class="hljs-keyword">return</span> ans;<br>&#125;<br></code></pre></td></tr></table></figure>
 <h2 id="例题">例题</h2>
-<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1226">P1226
-【模板】快速幂||取余运算</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1226">P1226 【模板】快速幂||取余运算</a></p>
 
                 
               </div>
@@ -668,8 +669,7 @@ n) (n为幂次)</p>
     
       <div class="col-lg-7 mx-auto nopadding-x-md">
         <div class="container custom mx-auto">
-           <!--音乐-->
-<div id="player" class="aplayer aplayer-withlist aplayer-fixed" data-id="9619092393" data-server="tencent" data-type="playlist" data-order="random" data-fixed="true" data-listfolded="true" data-theme="#2D8CF0"></div> 
+          <div id="player" class="aplayer aplayer-withlist aplayer-fixed" data-id="9619092393" data-server="tencent" data-type="playlist" data-order="random" data-fixed="true" data-listfolded="true" data-theme="#2D8CF0"></div>
         </div>
       </div>
     
@@ -706,8 +706,9 @@ n) (n为幂次)</p>
     
 
   
-
+<!--<div id="player" class="aplayer aplayer-withlist aplayer-fixed" data-id="9619092393" data-server="tencent" data-type="playlist" data-order="random" data-fixed="true" data-listfolded="true" data-theme="#2D8CF0"></div>-->
 </div>
+
 
   
   
@@ -931,6 +932,7 @@ n) (n为幂次)</p>
 
 
   
+<script src="/js/music.js"></script>
 <script src="/js/Aplayer.min.js"></script>
 <script src="/js/Meting.min.js"></script>
 <script src="/js/Meting.js"></script>
